@@ -1,0 +1,14 @@
+.album {
+    display: inline-block;
+    margin: 15px;
+}
+
+.album img {
+    width: 220px;
+}
+
+section {
+    max-width: 600px;
+    float: left;
+    padding: 15px;
+}
