@@ -2,19 +2,19 @@
 Ejemplito, chiquito de una librería con javascript orientado a objetos.
 
 ##Before anything...
-This library is dependant in a second library (this is bad and I should feel bad, 
-I know, but this is not pro code anyway) called loadStacker that is a evry burden 
-and simplified version of jQuery's $(document).ready() which stacks any possible 
+This library is dependant in a second library (this is bad and I should feel bad,
+I know, but this is not pro code anyway) called loadStacker that is a evry burden
+and simplified version of jQuery's $(document).ready() which stacks any possible
 method or function that may need to happen after window.load event and triggers them
 one after another.
 
 ##Usage:
 **WARNING**
-This is for _demo purposes only_. The design is sloppy and has harcoded stuff on it. 
+This is for _demo purposes only_. The design is sloppy and has harcoded stuff on it.
 Not to be taken seriously
 
 Watch index.html for srcipt order of scripts. you need loadStacker for the musicLibrary
-so you add that script first. Then the library and finally your own code. 
+so you add that script first. Then the library and finally your own code.
 
 Make sure to have a template with the following DOM structure:
 ```
@@ -40,7 +40,7 @@ You can set up an album just by creating a new Album instance with it's propper 
 and Artist Name arguments
 ```
 var metallica = new Album('Black Album', 'Metallica');
-``` 
+```
 
 ##Adding songs
 Once an Album instance is on, we can add a tracklist to it. Each song is an instance of
@@ -91,7 +91,7 @@ songList: _array_
 nothing
 
 ##Song
-###selectAlbum
+###selectSong
 **arguments:**
 none
 
