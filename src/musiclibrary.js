@@ -10,8 +10,11 @@ function MusicLibrary(global) {
 			var libraryThumbnail = document.createElement('article');
 			libraryThumbnail.className ='album';
 			libraryThumbnail.setAttribute('data-albumNo', i);
+			//saving this Object's scope so we can use it inside the event listener callback
 			var self = this;
+			//Using IIFE so we keep the index of each Element after the for loop ends
 			libraryThumbnail.addEventListener('click', (function(i){
+				//here we handle the actual functionality
 				return function() {
 					self.lib[i].selectAlbum();
 				};
